@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<h3>Page de recherche</h3>
+
+<form action="/search/results" method="get" class="search-form">
+
+    <input type="search" name="search" placeholder="Votre recherche" class="search-form--input">
+
+    <button class="search-form--button">Rechercher</button>
+
+</form>
+
+<%- include('partials/footer') %>

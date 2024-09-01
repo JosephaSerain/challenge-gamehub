@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title><%= typeof title !== "undefined" ? title : '' %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <% if (typeof game !== "undefined" && game.cssFile) { %>
+      <link rel="stylesheet" href="/css/<%= game.cssFile %>">
+  <% } %>
+
+  </head>
+
+  <body>
+
+    

@@ -1,0 +1,22 @@
+[
+    {
+        "userName": "bobD",
+        "realName": "Paul Mc Cartney",
+        "password": "sunburyroad"
+    },
+    {
+        "realName": "John Lennon",
+        "password": "newcastleroad",
+        "userName": "elvisP"
+    },
+    {
+        "realName": "George Harrison",
+        "userName": "leonardC",
+        "password": "arnoldgrove"
+    },
+    {
+        "password": "admiralgrove",
+        "userName": "charlieW",
+        "realName": "Ringo Starr"
+    }
+]

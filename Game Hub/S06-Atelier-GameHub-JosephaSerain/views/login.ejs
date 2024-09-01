@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+
+<h3>Identification</h3>
+
+<% if (typeof hasError !== "undefined" && hasError) { %>
+    <p class="error">Aïe, ça n'a pas marché, on réessaie ?</p>
+<% } %>
+
+<form action="" method="post" class="login-form">
+    <div class="login-form__line">
+        <label for="user-name">Nom d'utilisateur</label>
+        <input type="text" name="username" id="user-name" placeholder="ex: root">
+    </div>
+
+    <div class="login-form__line">
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" placeholder="ex: admin123">
+    </div>
+
+    <div class="login-form__line login-form__line--buton">
+        <button type="submit">Connexion</button>
+    </div>
+</form>
+
+<%- include('partials/footer') %>

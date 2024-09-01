@@ -1,0 +1,141 @@
+/** GENERAL RULES */
+
+body {
+    font-family: sans-serif;
+    background-color: #5057c8;
+    height: 100vh;
+    width: 100vw;
+    
+    /* Règle qui permet de gérer la disposition des enfants
+    comme le color-picker qui sera en position: absolute */
+    position: relative;
+}
+  
+/** CONFIGURATION FORM RULES */
+
+.main {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.configuration {
+  background-color: #3148ad;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+}
+  
+  /* Règles communes pour les inputs
+  et le button du formulaire .configuration
+   */
+  .configuration input,
+  .configuration button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-right: 0.1rem;
+    border: 0;
+  }
+  
+  .configuration input {
+    width: 15rem;
+  }
+  
+  .configuration input:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  
+  .configuration button {
+    background-color: #9b69e5;
+    color: white;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  
+  /** GAMEBOARD RULES */
+  
+  /* GAMEBOARD */
+  
+  #invader {
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+    margin: 75px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* GAMEBOARD LINE */
+  
+  .line {
+    display: flex;
+  }
+  
+  /* GAMEBOARD PIXEL */
+  
+  .pixel {
+    /* width: 32px;
+    height: 32px; */
+    cursor: pointer;
+    border: solid 2px;
+  }
+  
+  .pixel--empty,
+  .color-ball--empty {
+    background-color: #d2dae2;
+    border-color: #7b87a1;
+  }
+  
+  .pixel--plain,
+  .color-ball--plain {
+    background-color: #495461;
+    border-color: #1e272e;
+  }
+  
+  .pixel--light,
+  .color-ball--light {
+    background-color: #79ea83;
+    border-color: #64c76d;
+  }
+  
+  .pixel--highlight,
+  .color-ball--highlight {
+    background-color: #fac148;
+    border-color: #f7a835;
+  }
+  
+  /** COLOR PICKER RULES */
+  
+  #color-picker {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4945a3;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .color-ball {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+  
+  .color-ball:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-ball--active,
+  .color-ball--active:hover {
+    transform: scale(1.3);
+  }

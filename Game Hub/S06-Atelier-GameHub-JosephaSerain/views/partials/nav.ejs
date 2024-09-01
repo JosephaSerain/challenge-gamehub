@@ -1,0 +1,18 @@
+
+<header>
+    <h1>GameHub</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <% games.forEach(game => { %>
+          <li><a href="/game/<%= game.name %>"><%= game.title %></a></li>
+        <% }); %>
+      </ul>
+    </nav>
+</header>
+
+
+
+
+
+

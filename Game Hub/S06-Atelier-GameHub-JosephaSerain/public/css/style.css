@@ -1,0 +1,129 @@
+/** reset **/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* True Styling */
+
+header {
+  background: rgb(88, 87, 87) center / cover no-repeat url(/images/boardgames.jpg) ;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 0;
+  font-family: fantasy;
+  font-size: 5rem;
+  padding: 10px;
+  text-align: center;
+  color: white!important;
+  background: rgba(100,100,100,0.8);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.5), 0px 0px 10px rgba(0,0,0,0.5), 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+header nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+}
+
+header nav ul {
+  background: rgba(255,255,255,0.8);
+  color: gb(243, 205, 18);
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 50px;
+}
+
+header nav ul li {
+  text-align:center;
+  padding: 15px;
+  transition: all ease .5s;
+  font-size: 1rem;
+}
+
+header nav ul li:hover {
+  font-size: 1.2rem;
+  text-shadow: 0px 10px 4px rgba(0,0,0,0.5);
+}
+
+h3 {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.search-form {
+  text-align: center;
+}
+
+.search-form--input, .search-form--button {
+  padding: 10px;
+  border-radius: 0;
+  border: solid 1px #999;
+}
+
+.search-results {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.search-results--summary {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+.search-results--item {
+  padding: 3px 0;
+}
+
+.search-results--item-link::before {
+  content: " - ";
+}
+
+.search-results--item-link a {
+  color: #999;
+  text-decoration: underline;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: auto;
+}
+.login-form__line {
+  padding: 5px;
+}
+
+.login-form__line {
+  display: flex;
+  align-content: stretch;
+}
+
+.login-form__line label {
+  width: 150px;
+  display: inline-block;
+}
+
+.login-form__line input {
+  padding: 5px;
+  border-radius: 0;
+  border: solid 1px #999;
+  flex-grow: 1;
+}
+
+.login-form__line--buton {
+  flex-direction: row-reverse;
+}
+.login-form__line button {
+  padding: 10px;
+  border-radius: 0;
+  border: solid 1px #999;
+}

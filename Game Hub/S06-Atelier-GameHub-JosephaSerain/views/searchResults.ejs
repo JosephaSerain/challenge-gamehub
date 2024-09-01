@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<h3>Résultat de la recherche</h3>
+
+<section class="search-results">
+
+    <% if (foundGames.length===0) {%>
+        <div class="search-results--no-result">
+            Nous n'avons trouvé aucun jeu correspondant à votre recherche
+        </div>
+    <% } else {%>
+        <div class="search-results--summary">
+            Nous avons trouvé <%= foundGames.length %> jeu<%= foundGames.length > 1 ? "x" : "" %>
+            correspondant à votre recherche
+        </div>
+        <% for (const game of foundGames) { %>
+            <div class="search-results--item">
+                <strong class="search-results--item-title"><%= game.title %></strong>
+                <span class="search-results--item-link">
+                    Pour y jouer :
+                    <a href="/game/<%= game.name%>"><%= game.title %></a>
+                </span>
+            </div>
+        <% } %>
+    <% } %>
+</section>
+
+<%- include('partials/footer') %>
